@@ -8,8 +8,7 @@ import pandas as pd
 database = firebase.initialize()
 delay = 1 # Setting delay in seconds
 
-n = 0
-while n<30:
+while True:
     data = algo.import_df(database)
     timestamp = datetime.datetime.now() # Generating datetime object
     timestamp = int(round(timestamp.timestamp())) # converting datetime object to timestamp
@@ -31,5 +30,4 @@ while n<30:
     }
 
     firebase.upload(data,timestamp,database) # Upload the data to firebase 
-    n = n+1
     time.sleep(delay) # Delay 
