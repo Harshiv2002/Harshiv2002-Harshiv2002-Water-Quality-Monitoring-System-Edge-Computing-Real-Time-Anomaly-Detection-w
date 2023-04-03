@@ -14,10 +14,10 @@ while True:
     timestamp = int(round(timestamp.timestamp())) # converting datetime object to timestamp
     turbidity = sensor.read_turbidity() # Reading turbidity measurements
     temp = sensor.read_temp() # reading temperature measurements
-    #turbidity_anamoly = algo.spcc(data,"turbidity",turbidity) # Checking for turbidity anamoly
-    turbidity_anamoly = algo.ztest(data,"turbidity",turbidity) # Checking for turbidity anamoly
-    #temp_anamoly = algo.spcc(data,"temperature",temp) # Checking for temperature anamoly 
-    temp_anamoly = algo.ztest(data,"temperature",temp) # Checking for temperature anamoly
+    #turbidity_anamoly = algo.spcc(data,"turbidity",turbidity) # Checking for turbidity anamoly using spcc
+    turbidity_anamoly = algo.ztest(data,"turbidity",turbidity) # Checking for turbidity anamoly using z test
+    #temp_anamoly = algo.spcc(data,"temperature",temp) # Checking for temperature anamoly using spcc
+    temp_anamoly = algo.ztest(data,"temperature",temp) # Checking for temperature anamoly using z test
     
 
 
