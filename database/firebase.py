@@ -6,15 +6,15 @@ from firebase_admin import credentials
 def initialize():
 
     config = {
-        "apiKey": "AIzaSyCQh-8hZ-d8GL3lyCQYTxlOaRig1XDDJFQ",
-        "authDomain": "tarp-e8fb8.firebaseapp.com",
-        "projectId": "tarp-e8fb8",
-        "storageBucket": "tarp-e8fb8.appspot.com",
-        "messagingSenderId": "431841665583",
-        "appId": "1:431841665583:web:eb8b3116cf8cd55857dcda",
-        "measurementId": "G-Z074KBKY7N",
+        "apiKey": "<API KEY>",
+        "authDomain": "<authDomain>",
+        "projectId": "<projectId>",
+        "storageBucket": "<storageBucket>",
+        "messagingSenderId": "<messagingSenderId>",
+        "appId": "<appId>",
+        "measurementId": "<measurementId>",
         
-        "databaseURL": "https://tarp-e8fb8-default-rtdb.firebaseio.com/"
+        "databaseURL": "<databaseURL>"
     }
 
     firebase = pyrebase.initialize_app(config) 
